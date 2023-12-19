@@ -15,7 +15,11 @@ class UserController extends Controller
     {
         $data = $request->validate();
         dd($data);
-        return view('users.store');
+        return redirect()->route('users.debug', ['data' => $data]);
+    }
+    function debug()
+    {
+        return view('users.debug');
     }
 
 }

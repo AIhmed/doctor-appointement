@@ -6,8 +6,6 @@
     <title>Laravel</title>
 </head>
 <body>
-
-    <h1>handle request retard</h1>
-
+    {{ data }}
 </body>
 </html>

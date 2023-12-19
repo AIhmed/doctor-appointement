@@ -24,4 +24,5 @@ Route::get('home/', function() {
 
 
 Route::get('users/create/', [UserController::class, 'create'])->name('users.create');
-Route::get('users/store/', [UserController::class, 'store'])->name('users.store');
+Route::post('users/store/', [UserController::class, 'store'])->name('users.store');
+Route::get('users/debug/', [UserController::class, 'debug'])->name('users.debug');
